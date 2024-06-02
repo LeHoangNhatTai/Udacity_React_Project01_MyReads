@@ -56,7 +56,8 @@ function App() {
       />
       <Route exact path="/search"
         element={
-          <SearchBookPage eventUpdBook={eventUpdBook}/>
+          <SearchBookPage listBooks={books}
+                          eventUpdBook={eventUpdBook}/>
         }
       />
     </Routes>
